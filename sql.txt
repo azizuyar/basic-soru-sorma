@@ -1,0 +1,96 @@
+Aşağıdaki DCL komutlarından hangisi kullanıcıya sadece SELECT izni verir?           
+A) GRANT SELECT TO Kullanici       ---------------------------------------
+B) GRANT ALL ON Tablo TO Kullanici
+C) GRANT Kullanici TO SELECT
+D) REVOKE SELECT FROM Kullanici
+
+
+Aşağıdaki SQL veri tiplerinden hangisi ondalıklı sayılar için kullanılır ve en yüksek hassasiyeti sunar?           
+A) DECIMAL(10,2)               
+B) FLOAT(53) -----------------------------------
+C) MONEY
+D) REAL
+
+
+Hangi veri tipi tarih ve saat bilgisi saklamak için kullanılır ve en yüksek hassasiyete sahiptir?        
+A) DATETIME
+B) DATETIME2-----------------------------------------------------------------
+C) DATE
+D) TIME
+
+Aşağıdaki DCL komutlarından hangisi kullanıcının DELETE iznini kalıcı olarak kaldırır?        
+A) DENY DELETE TO Kullanici
+B) REVOKE DELETE FROM Kullanici   ----------------------------------
+C) GRANT DELETE TO Kullanici
+D) DELETE ACCESS TO Kullanici
+
+Aşağıdaki SQL komutlarından hangisi DDL (Data Definition Language) kategorisine aittir?      
+A) SELECT
+B) INSERT
+C) UPDATE
+D) CREATE ✓
+
+ 
+SQL'de normalizasyon hakkında hangisi DOĞRUdur?                                            
+A) Veri tekrarını artırmak için yapılır
+B) Sadece büyük tablolarda uygulanır
+C) Veri tutarlılığını sağlamak ve tekrarı önlemek için yapılır ✓
+D) Performansı her zaman düşürür
+
+
+
+SQL'de NULL değer hakkında hangisi YANLIŞtır?                                      
+A) NULL bir değer yokluğunu ifade eder
+B) NULL = NULL karşılaştırması FALSE döner ✓
+C) IS NULL operatörü ile kontrol edilir
+D) NULL kullanılan matematiksel işlemlemlerde sonuç NULL döner.
+
+
+SQL'de Self Join ne demektir?                   
+A) Aynı tablonun kendisiyle birleştirilmesi ✓
+B) İki farklı veritabanından tablo birleştirme
+C) Primary key ile foreign key birleştirme
+D) Sadece sayısal sütunların birleştirilmesi
+
+SQL'de Cross Join (Kartezyen Çarpım) ne yapar?            
+A) Sadece eşleşen kayıtları getirir
+B) İlk tablonun her satırını ikinci tablonun her satırıyla eşleştirir ✓
+C) Hiçbir kayıt getirmez
+D) Sadece NULL olmayan kayıtları getirir
+
+Veritabanında Deadlock ne demektir?                        
+A) Veritabanının tamamen durması
+B) İki veya daha fazla işlemin birbirini beklemesi sonucu oluşan kilitlenme ✓
+C) Çok fazla kullanıcının aynı anda bağlanması
+D) Disk alanının dolması
+
+----\
+
+Bir restoranın Yemekler (yemek_id, isim, fiyat) ve SiparisDetaylari (siparis_id, yemek_id, adet) tabloları var. 
+Bazı yemekler hiç sipariş edilmemiş. Şef, en az 10 kez sipariş edilen yemeklerin ortalama fiyatını öğrenmek istiyor.
+
+Soru: İstenen bilgiyi doğru şekilde veren sorgu hangisidir?
+
+A) SELECT AVG(fiyat) FROM Yemekler y JOIN SiparisDetaylari s ON y.yemek_id = s.yemek_id GROUP BY y.yemek_id HAVING SUM(s.adet) >= 10;
+B) SELECT AVG(y.fiyat) FROM Yemekler y WHERE y.yemek_id IN (SELECT s.yemek_id FROM SiparisDetaylari s GROUP BY s.yemek_id HAVING SUM(s.adet) >= 10);
+C) SELECT AVG(fiyat) FROM (SELECT y.fiyat FROM Yemekler y JOIN SiparisDetaylari s ON y.yemek_id = s.yemek_id GROUP BY y.yemek_id, y.fiyat HAVING SUM(s.adet) >= 10) t; -------------------------
+D) SELECT y.fiyat FROM Yemekler y JOIN SiparisDetaylari s ON y.yemek_id = s.yemek_id GROUP BY y.yemek_id, y.fiyat HAVING SUM(s.adet) >= 10;
+
+---
+
+SQL'de LAG() ve LEAD() fonksiyonlarının diğer SQL fonksiyonlarından ayıran en temel özelliği nedir?
+
+A) Bir satırın önceki veya sonraki satırdaki değerine erişim sağlar. ---------------------
+B) Verileri belirli bir kritere göre sıralamak için kullanılır.
+C) Gruplanmış veriler üzerinde gruplama işlemleri gerçekleştirir.
+D) Koşullu ifadelerle filtreleme yapmaya olanak tanır.
+
+---
+
+Bir marketin Urunler (urun_id, stok, fiyat) tablosu var. Bazı ürünlerin stok bilgisi NULL. Yönetici, stok bilgisi girilmiş olan ürünlerin ortalama fiyatını hesaplamak istiyor.
+İstenen sonucu veren sorgu hangisidir?
+
+A) SELECT AVG(fiyat) FROM Urunler WHERE stok IS NOT NULL; -------------
+B) SELECT AVG(fiyat) FROM Urunler WHERE stok <> NULL;
+C) SELECT AVG(fiyat) FROM Urunler HAVING stok IS NOT NULL;
+D) SELECT AVG(fiyat) FROM Urunler WHERE stok = NOT NULL;

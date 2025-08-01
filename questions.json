@@ -1,0 +1,374 @@
+{
+  "categories": {
+    "oop": {
+      "title": "Object Oriented Programming",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Nesne yönelimli programlamanın 4 temel prensibi hangisidir?",
+          "options": [
+            "Inheritance, Polymorphism, Encapsulation, Abstraction",
+            "Modularity, Reusability, Maintainability, Scalability",
+            "Composition, Aggregation, Association, Dependency",
+            "Coupling, Cohesion, Separation, Integration"
+          ],
+          "correctAnswer": 0,
+          "explanation": "OOP'nin 4 temel prensibi: Kalıtım, Çok biçimlilik, Kapsülleme ve Soyutlama"
+        },
+        {
+          "id": 2,
+          "question": "Class ve Object arasındaki ilişki için hangisi doğrudur?",
+          "options": [
+            "Class bir şablondur, Object bu şablondan üretilen örnektir",
+            "Object bir blueprint'tir, Class bu blueprint'ten türetilen instance'dır",
+            "Class runtime'da oluşur, Object compile time'da tanımlanır",
+            "Object static yapıdır, Class dynamic olarak değişebilir"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Class bir şablon/blueprint'tir, Object ise bu şablondan oluşturulan instance'dır"
+        },
+        {
+          "id": 3,
+          "question": "Aşağıdakilerden hangisi Phone sınıfından bir nesne oluşturmak için doğru bir C# ifadesidir?\\n\\nclass Phone {\\n    public string Brand;\\n}",
+          "options": [
+            "Phone myPhone = new Phone();",
+            "Phone myPhone = Phone();",
+            "myPhone = new Phone();",
+            "Phone = new Phone();"
+          ],
+          "correctAnswer": 0,
+          "explanation": "C#'ta nesne oluşturmak için 'Type variableName = new Type();' syntax'ı kullanılır"
+        },
+        {
+          "id": 4,
+          "question": "Nesne Yönelimli Programlama yazılım geliştirmede neden yaygın tercih edilir?",
+          "options": [
+            "Kodun modülerliğini artırarak yeniden kullanılabilirliğini ve bakımını kolaylaştırır",
+            "Memory management'ı otomatik hale getirerek garbage collection sağlar",
+            "Functional programming paradigmasından daha hızlı execution time sunar",
+            "Database işlemlerinde SQL sorgularını optimize eder"
+          ],
+          "correctAnswer": 0,
+          "explanation": "OOP'nin ana avantajı kod modülerliği, yeniden kullanılabilirlik ve bakım kolaylığıdır"
+        },
+        {
+          "id": 5,
+          "question": "Çok biçimlilik (polymorphism) kavramı neyi ifade eder?",
+          "options": [
+            "Bir class'ın multiple inheritance özelliği göstermesi",
+            "Aynı interface'i implement eden farklı class'ların farklı davranışlar sergilemesi",
+            "Bir object'in runtime'da type casting ile farklı türlere dönüştürülmesi",
+            "Generic types kullanarak type-safe collections oluşturulması"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Polymorphism, aynı interface'i farklı şekillerde implement etme yeteneğidir"
+        },
+        {
+          "id": 6,
+          "question": "Constructor (yapıcı metod) için hangisi doğrudur?",
+          "options": [
+            "Object instantiation sırasında otomatik çağrılır ve initial state'i ayarlar",
+            "Object'in lifecycle'ı boyunca memory allocation'ını yönetir",
+            "Static members'ı initialize etmek için kullanılır",
+            "Inheritance hierarchy'sinde parent class'ları bağlar"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Constructor, nesne oluşturulurken otomatik çağrılan ve başlangıç durumunu ayarlayan metoddur"
+        },
+        {
+          "id": 7,
+          "question": "Method overloading (aşırı yükleme) hangi durumu tanımlar?",
+          "options": [
+            "Aynı class içinde aynı isimde farklı parameter signature'lı metodlar",
+            "Parent class'taki bir metodun child class'ta yeniden implement edilmesi",
+            "Interface'teki abstract metodların concrete class'ta tanımlanması",
+            "Static metodların runtime'da dynamic olarak çağrılması"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Method overloading, aynı isimde farklı parametreli metodlar tanımlamaktır"
+        },
+        {
+          "id": 8,
+          "question": "Method overriding (geçersiz kılma) ne anlama gelir?",
+          "options": [
+            "Inheritance hierarchy'sinde parent metodun child class'ta yeniden tanımlanması",
+            "Compile time'da method resolution'ının belirlenmesi",
+            "Abstract class'taki metodların interface'e taşınması",
+            "Generic metodların specific type'larla specialization'ı"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Method overriding, parent class'taki metodun child class'ta yeniden tanımlanmasıdır"
+        },
+        {
+          "id": 9,
+          "question": "Getter ve setter metodları hangi amaca hizmet eder?",
+          "options": [
+            "Private field'lara controlled access sağlayarak encapsulation'ı korur",
+            "Object serialization ve deserialization işlemlerini yönetir",
+            "Thread-safe operations için synchronization mekanizması sunar",
+            "Reflection API kullanarak runtime'da field access'i optimize eder"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Getter/setter metodları encapsulation prensibini koruyarak kontrollü erişim sağlar"
+        },
+        {
+          "id": 10,
+          "question": "Nesne Yönelimli Programlama'nın en önemli avantajı nedir?",
+          "options": [
+            "Code reusability ve maintainability sağlayarak development efficiency'yi artırır",
+            "Procedural programming'e göre daha az memory consumption gösterir",
+            "Compiler optimization'ları sayesinde faster execution time sunar",
+            "Cross-platform compatibility için automatic code generation yapar"
+          ],
+          "correctAnswer": 0,
+          "explanation": "OOP'nin en önemli avantajı kod yeniden kullanılabilirliği ve bakım kolaylığıdır"
+        },
+        {
+          "id": 11,
+          "question": "\"Composition over inheritance\" prensibi ne anlama gelir?",
+          "options": [
+            "Object'leri birleştirerek functionality kazanmanın inheritance'tan daha esnek olması",
+            "Multiple inheritance'ın single inheritance'tan üstün olması",
+            "Abstract class'ların interface'lerden daha kullanışlı olması",
+            "Static method'ların instance method'lardan daha verimli olması"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Composition, inheritance'a göre daha esnek ve gevşek bağlı tasarım sağlar"
+        },
+        {
+          "id": 12,
+          "question": "Design pattern'ler yazılım geliştirmede neden kullanılır?",
+          "options": [
+            "Yaygın problemlere kanıtlanmış çözümler sunarak code quality'yi artırma",
+            "Execution performance'ı optimize etme",
+            "Memory usage'ı azaltma",
+            "Compile time'ı kısaltma"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Design pattern'ler yaygın problemlere test edilmiş çözümler sunar"
+        },
+        {
+          "id": 13,
+          "question": "Abstraction ile Encapsulation arasındaki temel fark nedir?",
+          "options": [
+            "Abstraction complexity'yi gizler, Encapsulation implementation'ı gizler",
+            "Abstraction daha hızlıdır, Encapsulation daha güvenlidir",
+            "Abstraction interface kullanır, Encapsulation class kullanır",
+            "İkisi arasında fark yoktur"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Abstraction karmaşıklığı gizler, Encapsulation implementasyon detaylarını gizler"
+        },
+        {
+          "id": 14,
+          "question": "Partial class'ların kullanım amacı nedir?\\n\\npublic partial class Employee {\\n    // Part 1\\n}\\npublic partial class Employee {\\n    // Part 2\\n}",
+          "options": [
+            "Performance optimization",
+            "Büyük class'ları birden fazla dosyaya bölerek maintainability sağlamak",
+            "Multiple inheritance simüle etmek",
+            "Memory usage optimize etmek"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Partial class'lar büyük sınıfları birden fazla dosyaya bölerek yönetimi kolaylaştırır"
+        },
+        {
+          "id": 15,
+          "question": "Bu C# kodunun çıktısı ne olur?\\n\\nclass Animal {\\n    public virtual void MakeSound() {\\n        Console.WriteLine(\\\"Animal makes a sound\\\");\\n    }\\n}\\n\\nclass Dog : Animal {\\n    public override void MakeSound() {\\n        Console.WriteLine(\\\"Dog barks\\\");\\n    }\\n}\\n\\nstatic void Main() {\\n    Animal myAnimal = new Dog();\\n    myAnimal.MakeSound();\\n}",
+          "options": [
+            "\"Animal makes a sound\"",
+            "\"Dog barks\"",
+            "Compile error verir",
+            "İki satır da yazdırır"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Polymorphism sayesinde runtime'da Dog sınıfının MakeSound metodu çağrılır"
+        }
+      ]
+    },
+    "sql": {
+      "title": "SQL Database",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Aşağıdaki DCL komutlarından hangisi kullanıcıya sadece SELECT izni verir?",
+          "options": [
+            "GRANT SELECT TO Kullanici",
+            "GRANT ALL ON Tablo TO Kullanici",
+            "GRANT Kullanici TO SELECT",
+            "REVOKE SELECT FROM Kullanici"
+          ],
+          "correctAnswer": 0,
+          "explanation": "GRANT SELECT TO komutu kullanıcıya sadece okuma izni verir"
+        },
+        {
+          "id": 2,
+          "question": "Aşağıdaki SQL veri tiplerinden hangisi ondalıklı sayılar için kullanılır ve en yüksek hassasiyeti sunar?",
+          "options": [
+            "DECIMAL(10,2)",
+            "FLOAT(53)",
+            "MONEY",
+            "REAL"
+          ],
+          "correctAnswer": 1,
+          "explanation": "FLOAT(53) en yüksek hassasiyetli ondalıklı sayı veri tipidir"
+        },
+        {
+          "id": 3,
+          "question": "Hangi veri tipi tarih ve saat bilgisi saklamak için kullanılır ve en yüksek hassasiyete sahiptir?",
+          "options": [
+            "DATETIME",
+            "DATETIME2",
+            "DATE",
+            "TIME"
+          ],
+          "correctAnswer": 1,
+          "explanation": "DATETIME2 en yüksek hassasiyetli tarih-saat veri tipidir"
+        },
+        {
+          "id": 4,
+          "question": "Aşağıdaki DCL komutlarından hangisi kullanıcının DELETE iznini kalıcı olarak kaldırır?",
+          "options": [
+            "DENY DELETE TO Kullanici",
+            "REVOKE DELETE FROM Kullanici",
+            "GRANT DELETE TO Kullanici",
+            "DELETE ACCESS TO Kullanici"
+          ],
+          "correctAnswer": 1,
+          "explanation": "REVOKE komutu verilen izinleri geri alır"
+        },
+        {
+          "id": 5,
+          "question": "Aşağıdaki SQL komutlarından hangisi DDL (Data Definition Language) kategorisine aittir?",
+          "options": [
+            "SELECT",
+            "INSERT",
+            "UPDATE",
+            "CREATE"
+          ],
+          "correctAnswer": 3,
+          "explanation": "CREATE komutu DDL kategorisinde olup veritabanı yapısını tanımlar"
+        },
+        {
+          "id": 6,
+          "question": "SQL'de normalizasyon hakkında hangisi DOĞRUdur?",
+          "options": [
+            "Veri tekrarını artırmak için yapılır",
+            "Sadece büyük tablolarda uygulanır",
+            "Veri tutarlılığını sağlamak ve tekrarı önlemek için yapılır",
+            "Performansı her zaman düşürür"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Normalizasyon veri tutarlılığını sağlar ve tekrarı önler"
+        },
+        {
+          "id": 7,
+          "question": "SQL'de NULL değer hakkında hangisi YANLIŞtır?",
+          "options": [
+            "NULL bir değer yokluğunu ifade eder",
+            "NULL = NULL karşılaştırması FALSE döner",
+            "IS NULL operatörü ile kontrol edilir",
+            "NULL kullanılan matematiksel işlemlemlerde sonuç NULL döner"
+          ],
+          "correctAnswer": 1,
+          "explanation": "NULL = NULL karşılaştırması UNKNOWN döner, FALSE değil"
+        },
+        {
+          "id": 8,
+          "question": "SQL'de Self Join ne demektir?",
+          "options": [
+            "Aynı tablonun kendisiyle birleştirilmesi",
+            "İki farklı veritabanından tablo birleştirme",
+            "Primary key ile foreign key birleştirme",
+            "Sadece sayısal sütunların birleştirilmesi"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Self Join aynı tablonun kendisiyle birleştirilmesidir"
+        },
+        {
+          "id": 9,
+          "question": "SQL'de Cross Join (Kartezyen Çarpım) ne yapar?",
+          "options": [
+            "Sadece eşleşen kayıtları getirir",
+            "İlk tablonun her satırını ikinci tablonun her satırıyla eşleştirir",
+            "Hiçbir kayıt getirmez",
+            "Sadece NULL olmayan kayıtları getirir"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Cross Join kartezyen çarpım yaparak tüm kombinasyonları oluşturur"
+        },
+        {
+          "id": 10,
+          "question": "Veritabanında Deadlock ne demektir?",
+          "options": [
+            "Veritabanının tamamen durması",
+            "İki veya daha fazla işlemin birbirini beklemesi sonucu oluşan kilitlenme",
+            "Çok fazla kullanıcının aynı anda bağlanması",
+            "Disk alanının dolması"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Deadlock, işlemlerin birbirini beklemesi sonucu oluşan kilitlenmedir"
+        },
+        {
+          "id": 11,
+          "question": "Bir restoranın Yemekler (yemek_id, isim, fiyat) ve SiparisDetaylari (siparis_id, yemek_id, adet) tabloları var. Bazı yemekler hiç sipariş edilmemiş. Şef, en az 10 kez sipariş edilen yemeklerin ortalama fiyatını öğrenmek istiyor.\\n\\nİstenen bilgiyi doğru şekilde veren sorgu hangisidir?",
+          "options": [
+            "SELECT AVG(fiyat) FROM Yemekler y JOIN SiparisDetaylari s ON y.yemek_id = s.yemek_id GROUP BY y.yemek_id HAVING SUM(s.adet) >= 10;",
+            "SELECT AVG(y.fiyat) FROM Yemekler y WHERE y.yemek_id IN (SELECT s.yemek_id FROM SiparisDetaylari s GROUP BY s.yemek_id HAVING SUM(s.adet) >= 10);",
+            "SELECT AVG(fiyat) FROM (SELECT y.fiyat FROM Yemekler y JOIN SiparisDetaylari s ON y.yemek_id = s.yemek_id GROUP BY y.yemek_id, y.fiyat HAVING SUM(s.adet) >= 10) t;",
+            "SELECT y.fiyat FROM Yemekler y JOIN SiparisDetaylari s ON y.yemek_id = s.yemek_id GROUP BY y.yemek_id, y.fiyat HAVING SUM(s.adet) >= 10;"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Subquery ile önce filtreleme yapıp sonra ortalama almak doğru yaklaşımdır"
+        },
+        {
+          "id": 12,
+          "question": "SQL'de LAG() ve LEAD() fonksiyonlarının diğer SQL fonksiyonlarından ayıran en temel özelliği nedir?",
+          "options": [
+            "Bir satırın önceki veya sonraki satırdaki değerine erişim sağlar",
+            "Verileri belirli bir kritere göre sıralamak için kullanılır",
+            "Gruplanmış veriler üzerinde gruplama işlemleri gerçekleştirir",
+            "Koşullu ifadelerle filtreleme yapmaya olanak tanır"
+          ],
+          "correctAnswer": 0,
+          "explanation": "LAG() ve LEAD() window fonksiyonları önceki/sonraki satırlara erişim sağlar"
+        },
+        {
+          "id": 13,
+          "question": "Bir marketin Urunler (urun_id, stok, fiyat) tablosu var. Bazı ürünlerin stok bilgisi NULL. Yönetici, stok bilgisi girilmiş olan ürünlerin ortalama fiyatını hesaplamak istiyor.\\nİstenen sonucu veren sorgu hangisidir?",
+          "options": [
+            "SELECT AVG(fiyat) FROM Urunler WHERE stok IS NOT NULL;",
+            "SELECT AVG(fiyat) FROM Urunler WHERE stok <> NULL;",
+            "SELECT AVG(fiyat) FROM Urunler HAVING stok IS NOT NULL;",
+            "SELECT AVG(fiyat) FROM Urunler WHERE stok = NOT NULL;"
+          ],
+          "correctAnswer": 0,
+          "explanation": "NULL kontrolü için IS NOT NULL operatörü kullanılmalıdır"
+        },
+        {
+          "id": 14,
+          "question": "Data Warehouse'un temel amacı ve özelliği aşağıdakilerden hangisidir?",
+          "options": [
+            "Farklı kaynaklardan gelen verileri tarihsel analiz için entegre eder, karar destek sistemlerinde kullanılmak üzere hazırlar.",
+            "Anlık işlem (OLTP) sistemleri gibi gerçek zamanlı veri depolar ve güncel veri sorguları için optimize edilmiştir.",
+            "Verileri fiziksel olarak tek bir sunucuda depolar ve depolama kapasitesini en üst düzeye çıkarmak için tasarlanmıştır.",
+            "Sadece yapısal (SQL) verileri işler ve ham verileri değiştirmeden olduğu gibi saklar."
+          ],
+          "correctAnswer": 0,
+          "explanation": "NULL kontrolü için IS NOT NULL operatörü kullanılmalıdır"
+        },
+        {
+          "id": 15,
+          "question": "Bir veritabanı sisteminin ACID özelliklerinden İzolasyon neyi ifade eder?",
+          "options": [
+            "Bir işlemin tüm adımlarının ya tamamının başarılı ya da tamamının başarısız olmasını sağlar.",
+            "Bir işlemin tamamlandığında verilerin tutarlı ve geçerli durumda olmasını garanti eder.",
+            "Birden fazla eşzamanlı işlemin birbirini izole ederek tutarsızlık yaratmasını önler.",
+            "Bir işlemin sonuçlarının kalıcı olmasını ve sistem çökse bile kaybolmamasını sağlar."
+          ],
+          "correctAnswer": 2,
+          "explanation": "NULL kontrolü için IS NOT NULL operatörü kullanılmalıdır"
+        }
+      ]
+    }
+  }
+}

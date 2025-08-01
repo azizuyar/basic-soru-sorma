@@ -1,0 +1,198 @@
+# Geliştirilmiş OOP Soruları
+
+## 1. OOP'nin Temel Prensipleri
+**Soru:** Nesne yönelimli programlamanın 4 temel prensibi hangisidir?
+
+A) Inheritance, Polymorphism, Encapsulation, Abstraction ✓
+B) Modularity, Reusability, Maintainability, Scalability  
+C) Composition, Aggregation, Association, Dependency
+D) Coupling, Cohesion, Separation, Integration
+
+---
+
+## 2. Class ve Object İlişkisi
+**Soru:** Class ve Object arasındaki ilişki için hangisi doğrudur?
+
+A) Class bir şablondur, Object bu şablondan üretilen örnektir ✓
+B) Object bir blueprint'tir, Class bu blueprint'ten türetilen instance'dır
+C) Class runtime'da oluşur, Object compile time'da tanımlanır
+D) Object static yapıdır, Class dynamic olarak değişebilir
+
+---
+
+Aşağıdakilerden hangisi Phone sınıfından bir nesne oluşturmak için doğru bir C# ifadesidir?
+
+class Phone {
+    public string Brand;
+}
+
+
+A) Phone myPhone = new Phone(); ✓
+B) Phone myPhone = Phone(); 
+C) myPhone = new Phone(); 
+D) Phone = new Phone();
+
+
+
+---
+
+## 4. OOP'nin Tercih Edilme Nedeni
+**Soru:** Nesne Yönelimli Programlama yazılım geliştirmede neden yaygın tercih edilir?
+
+A) Kodun modülerliğini artırarak yeniden kullanılabilirliğini ve bakımını kolaylaştırır ✓
+B) Memory management'ı otomatik hale getirerek garbage collection sağlar
+C) Functional programming paradigmasından daha hızlı execution time sunar
+D) Database işlemlerinde SQL sorgularını optimize eder
+
+---
+
+## 5. Polymorphism Kavramı
+**Soru:** Çok biçimlilik (polymorphism) kavramı neyi ifade eder?
+
+A) Bir class'ın multiple inheritance özelliği göstermesi
+B) Aynı interface'i implement eden farklı class'ların farklı davranışlar sergilemesi ✓
+C) Bir object'in runtime'da type casting ile farklı türlere dönüştürülmesi
+D) Generic types kullanarak type-safe collections oluşturulması
+
+---
+
+## 6. Constructor'ın Rolü
+**Soru:** Constructor (yapıcı metod) için hangisi doğrudur?
+
+A) Object instantiation sırasında otomatik çağrılır ve initial state'i ayarlar ✓
+B) Object'in lifecycle'ı boyunca memory allocation'ını yönetir
+C) Static members'ı initialize etmek için kullanılır
+D) Inheritance hierarchy'sinde parent class'ları bağlar
+
+---
+
+## 7. Method Overloading
+**Soru:** Method overloading (aşırı yükleme) hangi durumu tanımlar?
+
+A) Aynı class içinde aynı isimde farklı parameter signature'lı metodlar ✓
+B) Parent class'taki bir metodun child class'ta yeniden implement edilmesi
+C) Interface'teki abstract metodların concrete class'ta tanımlanması
+D) Static metodların runtime'da dynamic olarak çağrılması
+
+---
+
+## 8. Method Overriding
+**Soru:** Method overriding (geçersiz kılma) ne anlama gelir?
+
+A) Inheritance hierarchy'sinde parent metodun child class'ta yeniden tanımlanması ✓
+B) Compile time'da method resolution'ının belirlenmesi
+C) Abstract class'taki metodların interface'e taşınması
+D) Generic metodların specific type'larla specialization'ı
+
+---
+
+## 9. Getter/Setter Pattern
+**Soru:** Getter ve setter metodları hangi amaca hizmet eder?
+
+A) Private field'lara controlled access sağlayarak encapsulation'ı korur ✓
+B) Object serialization ve deserialization işlemlerini yönetir
+C) Thread-safe operations için synchronization mekanizması sunar
+D) Reflection API kullanarak runtime'da field access'i optimize eder
+
+---
+
+## 10. OOP'nin Ana Avantajı
+**Soru:** Nesne Yönelimli Programlama'nın en önemli avantajı nedir?
+
+A) Code reusability ve maintainability sağlayarak development efficiency'yi artırır ✓
+B) Procedural programming'e göre daha az memory consumption gösterir
+C) Compiler optimization'ları sayesinde faster execution time sunar
+D) Cross-platform compatibility için automatic code generation yapar
+
+---
+
+##11 "Composition over inheritance" prensibi ne anlama gelir?
+
+A) Object'leri birleştirerek functionality kazanmanın inheritance'tan daha esnek olması ✓ 
+B) Multiple inheritance'ın single inheritance'tan üstün olması 
+C) Abstract class'ların interface'lerden daha kullanışlı olması 
+D) Static method'ların instance method'lardan daha verimli olması
+
+---
+
+##12.Design pattern'ler yazılım geliştirmede neden kullanılır?
+
+A) Yaygın problemlere kanıtlanmış çözümler sunarak code quality'yi artırma ✓ 
+B) Execution performance'ı optimize etme 
+C) Memory usage'ı azaltma 
+D) Compile time'ı kısaltma
+
+---
+
+##13. Abstraction ile Encapsulation arasındaki temel fark nedir?
+
+A) Abstraction complexity'yi gizler, Encapsulation implementation'ı gizler 
+B) Abstraction daha hızlıdır, Encapsulation daha güvenlidir 
+C) Abstraction interface kullanır, Encapsulation class kullanır 
+D) İkisi arasında fark yoktur
+
+---
+
+##14.Partial class'ların kullanım amacı nedir?
+
+public partial class Employee {
+    // Part 1
+}
+public partial class Employee {
+    // Part 2
+}
+
+A) Performance optimization 
+B) Büyük class'ları birden fazla dosyaya bölerek maintainability sağlamak ✓ 
+C) Multiple inheritance simüle etmek 
+D) Memory usage optimize etmek
+
+---
+
+##14. Bu C# kodunun çıktısı ne olur?
+
+class Animal {
+    public virtual void MakeSound() {
+        Console.WriteLine("Animal makes a sound");
+    }
+}
+
+class Dog : Animal {
+    public override void MakeSound() {
+        Console.WriteLine("Dog barks");
+    }
+}
+
+static void Main() {
+    Animal myAnimal = new Dog();
+    myAnimal.MakeSound();
+}
+
+A) "Animal makes a sound" 
+B) "Dog barks" ✓ 
+C) Compile error verir 
+D) İki satır da yazdırır
+
+##15.Bu kodda hangi satır hata verir?
+
+abstract class Shape {
+    public abstract double GetArea();
+    public void Display() {
+        Console.WriteLine($"Area: {GetArea()}");
+    }
+}
+
+class Circle : Shape {
+    public double Radius { get; set; }
+    public override double GetArea() {
+        return Math.PI * Radius * Radius;
+    }
+}
+
+// Kullanım:
+Shape shape1 = new Shape();        // Line 1
+Shape shape2 = new Circle();       // Line 2
+A) Line 1 - Abstract class instantiate edilemez ✓ 
+B) Line 2 - Circle Shape'ten türemiyor 
+C) GetArea method'u yanlış override edilmiş 
+D) Display method'u abstract olmalı
