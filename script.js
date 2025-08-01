@@ -62,7 +62,9 @@ function showQuestion() {
     const question = currentQuiz[currentQuestionIndex];
 
     document.getElementById('question-counter').textContent = `${currentQuestionIndex + 1}/10`;
-    document.getElementById('question-text').textContent = question.question;
+    // \n karakterlerini <br> etiketine dönüştür
+    const formattedQuestion = question.question.replace(/\\n/g, '<br>');
+    document.getElementById('question-text').innerHTML = formattedQuestion;
 
     const optionsContainer = document.getElementById('options-container');
     optionsContainer.innerHTML = '';
@@ -193,9 +195,12 @@ function showDetailedResults() {
         const resultItem = document.createElement('div');
         resultItem.className = `result-item ${answer.isCorrect ? 'correct-result' : 'wrong-result'}`;
 
+        // Soru metnindeki \n karakterlerini <br> etiketine dönüştür
+        const formattedQuestionText = answer.questionText.replace(/\\n/g, '<br>');
+        
         resultItem.innerHTML = `
             <div class="question-number">Soru ${index + 1}</div>
-            <div class="question-text">${answer.questionText}</div>
+            <div class="question-text">${formattedQuestionText}</div>
             <div class="answer-comparison">
                 <div class="user-answer">
                     <strong>Senin Cevabın:</strong> ${answer.userAnswerText}
